@@ -9,6 +9,7 @@ function index(app) {
         endpoints: [
             'GET /',
             'POST /token/generateToken',
+            'POST /token/verifyToken',
         ],
     };
 }

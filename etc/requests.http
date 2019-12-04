@@ -18,6 +18,16 @@ POST {{serviceUrl}}/token/generateToken
 Content-Type: application/json
 
 {
-    "data": "Example",
+    "data": "Ibrahim",
+    "signAlgorithm": "RS256"
+}
+
+###
+
+POST {{serviceUrl}}/token/verifyToken
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.SWJyYWhpbQ.c2ck9KcOIb7wxOuveMD7vJaFcel9ikf2B5qNGECYS6Nmb6pAJ0x55W65Qy2MTf-kLHXEYOEk5EkbSF2GdKyyXQ
+
+{
     "signAlgorithm": "RS256"
 }
