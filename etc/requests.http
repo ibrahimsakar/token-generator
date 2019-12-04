@@ -1,0 +1,23 @@
+# @serviceUrl = http://localhost:3000
+@serviceUrl = http://localhost
+
+##
+## ROOT
+##
+
+GET {{serviceUrl}}/
+Content-Type: application/json
+
+###
+
+##
+## TOKEN
+##
+
+POST {{serviceUrl}}/token/generateToken
+Content-Type: application/json
+
+{
+    "data": "Example",
+    "signAlgorithm": "RS256"
+}
